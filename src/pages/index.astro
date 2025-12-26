@@ -1,3 +1,10 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import "../styles/global.css";
+
+const pageTitle = "Home Page";
+---
+
 <html lang="es">
     <head>
         <meta charset="utf-8" />
@@ -7,10 +14,8 @@
         <title>Astro</title>
     </head>
     <body>
-        <a href="/">Inicio</a>
-        <a href="/about/">Sobre mi</a>
-        <a href="/blog/">Blog</a>
-
-        <h1>Mi sitio web de Astro</h1>
+        <BaseLayout pageTitle={pageTitle}>
+            <h2>Mi impresionante subtítulo del blog</h2>
+        </BaseLayout>
     </body>
 </html>
